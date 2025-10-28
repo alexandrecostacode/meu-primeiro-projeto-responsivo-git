@@ -1,0 +1,273 @@
+/* Desafio Responsivo */
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-left{
+    display: inline-block;
+    width: 60%;
+}
+
+.container-right{
+    display: inline-block;
+    width: 40%;
+}
+
+header{
+    margin: 20px 0 0 42px; /* Distância da margem superior em sentido horário ex: 20px cima / 0px direita / 0px Baixo / 42px esquerda */
+}
+
+.menu{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.88px;
+    text-align: center;
+    margin-right: 41px;
+    color: #17233D;
+    cursor: pointer;
+}
+
+.menu:hover{  /* Usando o hover, ao passar o cursor do mouse ele ficará com uma leve opacidade.  */
+    opacity: 0.8;
+}
+
+.menu:active{ /* Com o active, quando o botão receber um clique, ele receberá uma opacidade. */
+    opacity: 0.5;
+}
+
+.menu-button{
+    /* Texto dentro do botão */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #ffffff;
+    /* Abaixo é a configuração da borda do botão */
+    background: #4CB538; 
+    box-shadow: 0px 10px 24px #38802a; /* Cor da sombra */
+    border: none;
+    width: 124px;
+    height: 51px;
+    opacity: 1;
+    border-radius: 6px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.menu-button:hover{  /* Usando o hover, ao passar o cursor do mouse ele ficará com uma leve opacidade.  */
+    opacity: 0.8;
+}
+
+.menu-button:active{ /* Com o active, quando o botão receber um clique, ele receberá uma opacidade. */
+    opacity: 0.5;
+}
+
+img{
+    position: relative; /* Posição da imagem, será relativa a configuração personalizada abaixo */
+    width: 595px; /* Largura da imagem */
+    height: 500px; /* Altura da imagem */
+    top: 246px; /* Distância do topo */
+    left: 121px; /* Distância da lateral esquerda */
+}
+
+h1{
+    position: relative;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    letter-spacing: 0.6px;
+    color: #161A49;
+    width: 582px;
+    height: 164px;
+    left: 801px;
+    top: -170px;
+}
+
+p{
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    left: 801px;
+    top: -112px;
+    margin: 0px 35px 0px 0px;
+    color: #4B505A;
+}
+
+.link-learn{
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    top: -43px;
+    left: 801px;
+    color: #6FBF44;
+    cursor: pointer;   
+}
+
+.link-learn:hover{  /* Usando o hover, ao passar o cursor do mouse ele ficará com uma leve opacidade.  */
+    opacity: 0.8;
+}
+
+.link-learn:active{ /* Com o active, quando o botão receber um clique, ele receberá uma opacidade. */
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .container-right{
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .container-left{
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+
+    .menu-button{
+        position: static;
+        width: 91px;
+        height: 31px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        margin: 0px 50px 0 227px;
+
+
+    }
+
+    img{
+        position: absolute;
+        width: 312px;
+        height: 288px;
+        top: 600px;
+        left: 35px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+        width: auto;
+        text-align: center;
+        position: static;
+        margin: 90px 50px 0px 2px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 33px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        width: auto;
+        position: static;
+        margin: -60px 100px 35px 50px;
+    }
+
+    .link-learn{
+        position: static;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        margin: 50px 50px 0px 130px;
+    
+    }
+
+}
+
+
+
+
+
+
+/* 
+Aqui abaixo, não ficou legal em minha primeira tentativa!
+*{
+    width: 100px;
+    height: 50px;
+}
+    
+.container-right{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-left{
+    display: block;
+    width: 200%;
+    height: auto;
+    position: static;
+    margin-left: -90px;
+    margin-top: 120px;
+}
+
+img{
+    width: 312px;
+    height: 288px;
+    position: relative;
+    max-width: 90%;
+}
+
+.menu {
+    display: none; 
+
+.menu-button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: -89px;
+    right: 20px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    width: 278px;
+    height: 60px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 304px;
+    height: 165px;
+
+}
+
+.link-learn{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    width: 112px;
+    height: 27px;
+}
+
+
+*/
