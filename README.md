@@ -9,5 +9,5 @@
 <br>
 Tecnologias Utilizadas:<br>
 -HTML<br>
--CSS<br>
-<a href=""></a>
+-CSS<br><br>
+<a href="https://alexandrecostacode.github.io/meu-primeiro-projeto-responsivo-git/" target="_blank" rel="noopener noreferrer">Clique aqui para ver o site.</a>
